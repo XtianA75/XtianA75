@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia Reiki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Terapia Reiki: Armoniza tu Energía</h1>
+    </header>
+
+    <section id="carrusel">
+        <div class="carousel">
+            <div class="slide active">
+                <img src="reiki1.jpg" alt="Reiki en acción">
+                <div class="caption">Equilibrio y Bienestar Energético</div>
+            </div>
+            <div class="slide">
+                <img src="reiki2.jpg" alt="Sanación energética">
+                <div class="caption">Sanación Energética Profunda</div>
+            </div>
+            <div class="slide">
+                <img src="reiki3.jpg" alt="Paz y armonía">
+                <div class="caption">Encuentra Paz Interior</div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios de Reiki</h2>
+        <p>Ofrecemos sesiones de Reiki personalizadas para ayudarte a encontrar el equilibrio energético y el bienestar emocional.</p>
+        <ul>
+            <li>Sesiones de Reiki individual</li>
+            <li>Reiki a distancia</li>
+            <li>Reiki para animales</li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para reservar tu sesión o hacer consultas, completa el formulario a continuación:</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Terapia Reiki. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
